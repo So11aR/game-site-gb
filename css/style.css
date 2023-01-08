@@ -4,9 +4,7 @@
 }
 
 body {
-  background: #1B1C1F;
-  /* background: #eee; */
-
+  background: #1b1c1f;
 }
 
 .navigation {
@@ -26,15 +24,13 @@ body {
   font-size: 24px;
 }
 .btn-purple {
-  background-color: #8D46F6;
+  background-color: #8d46f6;
   padding: 16px 40px;
   transition: background 0.2s ease-in-out;
 }
 .btn-purple:hover {
   background-color: #753dca;
 }
-
-
 
 .gta-img {
   width: 300px;
@@ -44,11 +40,11 @@ body {
   align-items: flex-end;
   border-radius: 56px;
   margin-right: 8px;
-  background-color: #8B72FF;
-  transition:  0.2s ease-in;
+  background-color: #8b72ff;
+  transition: 0.2s ease-in;
 }
 .gta-img:hover {
-  background-color: #8D46F6;
+  background-color: #8d46f6;
 }
 
 .fortnite-img {
@@ -59,11 +55,12 @@ body {
   align-items: flex-end;
   border-radius: 56px;
   margin-left: 8px;
-  background-color: #FDF386;
-  transition:  0.2s ease-in;
+  background-color: #fdf386;
+  transition: 0.2s ease-in;
+  overflow-y: clip;
 }
 .fortnite-img:hover {
-  background-color: #71E66E;
+  background-color: #71e66e;
 }
 
 .dota-img {
@@ -74,13 +71,19 @@ body {
   align-items: flex-end;
   border-radius: 56px;
   margin-left: 8px;
-  background-color: #69ADFD;
-  transition:  0.2s ease-in;
+  background-color: #69adfd;
+  transition: 0.2s ease-in;
+  overflow-y: clip;
+}
+.dota-img img {
+  object-fit: contain;
+  width: 100%;
+  object-position: center;
+  height: 100%;
 }
 .dota-img:hover {
-  background-color: #FCB8FF;
+  background-color: #fcb8ff;
 }
-
 
 @media (max-width: 1400px) {
   .hero-title {
@@ -89,4 +92,8 @@ body {
   .hero-desc {
     font-size: 20px;
   }
+}
+
+@media (max-width: 1199px) {
+  /* 534 vsego / 300 i 190 */
 }
